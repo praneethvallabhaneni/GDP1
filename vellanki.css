@@ -1,0 +1,108 @@
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	
+	color: #0a0a0a; 
+	
+ 
+
+	margin: 0; 
+	padding: 0;
+
+
+	}
+
+ /* Add a black background color to the top navigation */
+ .topnav {
+  overflow: hidden;
+  background-color: rgb(59, 133, 194);
+}
+
+    .topnav a {
+  float:right;
+  color: #f2f2f2;
+  text-align:right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+   }
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(164, 188, 238);
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+
+
+
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #080808;
+    }
+    
+
+    
+    
+    p { 
+        margin-top: 0; 
+        text-align: justify;
+        }
+    h3 { 
+        font: italic normal 1.4em georgia, sans-serif;
+        letter-spacing: 1px; 
+        margin-bottom: 0; 
+        color: #7D775C;
+        }
+        container {
+          position: relative;
+          text-align: center;
+          color: white;
+        }
+        
+        /* Bottom left text */
+        .bottom-left {
+          position: absolute;
+          bottom: 8px;
+          left: 16px;
+        }
+        
+        /* Top left text */
+        .top-left {
+          position: absolute;
+          top: 8px;
+          left: 16px;
+        }
+        
+        /* Top right text */
+        .top-right {
+          position: absolute;
+          top: 8px;
+          right: 16px;
+        }
+        
+        /* Bottom right text */
+        .bottom-right {
+          position: absolute;
+          bottom: 8px;
+          right: 16px;
+        }
+        
+        /* Centered text */
+        .centered {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+

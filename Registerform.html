@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+            background-color: powderblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        input{
+            padding: 5px;
+            border-radius: 5px;
+            border-color: white;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        table {
+            color: brown;
+        }
+
+        td{
+            padding: 10px;
+        }
+
+        button {
+            background-color: rgba(130, 236, 162, 0.815);
+            border-radius: 5px;
+            width: 100px;
+            height: 30px;
+        }
+        form {
+            padding: 150px;
+            background-color:#E6E6FA;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1 style="color: #1E5878; text-align: center;"> <b>COVACC Registration Form</b></h1>
+        <table align="center">
+            <tr>
+                <td>
+                    First Name<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input type="text" placeholder="First Name" name="">
+                </td>
+            </tr>
+            <tr>
+            <tr>
+                <td>
+                    Last Name<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input type="text" placeholder="Last Name" name="">
+                </td>
+            </tr>
+            <tr>
+            <tr>
+                <td>
+                    Email Address<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input type="mail" placeholder="Email" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input type="password" placeholder="Password" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Re-enter Password<span style="color: red;">*</span>:
+                </td>
+
+                <td>
+                    <input type="password" placeholder="Re-Enter Password" name="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Phone number:
+                </td>
+
+                <td>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <button type="submit" class="registerbtn">Register</button>
+
+                </td>
+                <td>
+                    <br>
+                    <button type="submit" class="signbtn">Sign in</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

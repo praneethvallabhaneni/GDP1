@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Covacc </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">CovaccApp</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">CovidInfo
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="AboutCovid.html">AboutCovid</a></li>
+                <li><a href="Symptoms&Precautions.html">Symptoms&Precautions</a></li>
+                <li><a href="Covid Current Risk Rate.html">Covid Current Risk Rate</a></li>
+                <li><a href="Steps To Take If Tested Positive.html">Steps To Take If Tested Positive</a></li>
+                <li><a href="Mental Care.html">Mental Care</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">VaccineInfo
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="Vaccine Varients.html">Vaccine Varients</a></li>
+                  <li><a href="Precautions to consider.html">Precautions to consider  </a></li>
+                  <li><a href="Current Vaccination Rate.html">Current Vaccination Rate</a></li>
+                  <li><a href="Yor Personal Vaccination Info.html">Yor Personal Vaccination Info</a></li>
+                  <li><a href="After Vaccination.html">After Vaccination</a></li>
+                </ul>
+              </li>
+           
+            <li><a href="HealthRecord.html ">HealthRecord</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Contact Us</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container">
+            <form>
+             <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="name" class="form-control" style="width: 60%"id="name" placeholder="Enter Your Name">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="num">Phone Number</label>
+                        <input type="number" class="form-control" style="width: 60%" id="num" placeholder="Enter Your Phone Number">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                        <label for="gender">What is your Gender? </label><br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female"style="margin-left:25px;"  name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" style="margin-left:25px;" name="gender" value="other">
+                        <label for="other">Other</label>
+                        
+                </div>
+                
+            </div>
+            <hr>
+                <div>
+                    Are you tested Positive for covid? 
+                    <div class="form-group">
+                        
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="RadioYesNo" id="yes" value="yes">
+                            <label class="form-check-label" for="inlineRadio1">
+                                Yes
+                                
+                            <input class="form-check-input"style="margin-left:25px;" type="radio" name="RadioYesNo" id="no" value="no">
+                            <label class="form-check-label" for="inlineRadio2">No
+                            
+                            </label>
+                          </div>
+                    </div>
+                   
+                    Are you currently taking any medication?
+                    <div class="form-group">
+                        <div class="form-chack">
+                            <input class="form-check-input" type="radio" name="RadioMedication" value="yes" id="yes">
+                            <label class="form-check-label" for="yes">
+                                Yes
+                            
+                            <input class="form-check-input" style="margin-left:25px;" type="radio" name="RadioMedication" value="no" id="no">
+                            <label class="form-check-label" for="no">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                  
+                    Do you have history of using Tobacco?
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="Radiotobacco" value="yes" id="yes">
+                        <label class="form-check-label" for="no">
+                            Yes  
+
+                        <input class="form-check-input"style="margin-left:25px;"  type="radio" name="Radiotobacco" value="yes" id="yes">
+                        <label class="form-check-label" for="no">
+                            No
+                        </label>
+                    </div>
+                    Do you use or do you have history of using illegal drugs?
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="RadioDrugs" value="yes" id="yes">
+                        <label class="form-check-label" for="no">
+                            Yes
+                        
+                         <input class="form-check-input"style="margin-left:25px;"  type="radio" name="RadioDrugs" value="yes" id="yes">
+                         <label class="form-check-label" for="no">
+                             No
+                         </label>
+                    </div>
+                    <hr>
+                    <b>Check if you are female</b> 
+                           <br>            
+                    Are you pregnant?
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="RadioPreg" value="yes" id="yes">
+                        <label class="form-check-label" for="no">
+                            Yes
+                        
+                        <input class="form-check-input"style="margin-left:25px;"  type="radio" name="RadioPreg" value="yes" id="yes">
+                        <label class="form-check-label" for="no">
+                            No
+                        </label>
+                    </div>           
+                    
+                    Are you lactating?
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio"  name="RadioLact" value="yes" id="yes">
+                        <label class="form-check-label" for="no">
+                            Yes
+                        
+                        <input class="form-check-input"style="margin-left:25px;"  type="radio" name="RadioLact" value="yes" id="yes">
+                        <label class="form-check-label" for="no">
+                            No
+                        </label>
+                        
+                    </div>
+                    <hr> 
+                    How often do you consume alcohol?
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="RadioAl" value="occassionally" id="occasionally">
+                        <label class="form-check-label" for="oftenly">
+                            occasionally
+                        
+                        <input class="form-check-input"style="margin-left:25px;"  type="radio" name="RadioAl" value="occasionally" id="occasionally">
+                        <label class="form-check-label" for="often">
+                            often
+                        
+                        <input class="form-check-input"style="margin-left:25px;"  type="radio" name="RadioAl" value="rarely" id="rarely">
+                        <label class="form-check-label" for="never">
+                            rarely
+                        
+                        <input class="form-check-input"style="margin-left:25px;"  type="radio" name="RadioAl" value="rarely" id="rarely">
+                        <label class="form-check-label" for="never">
+                            never
+                        </label>
+                    </div>
+                    <style>
+                        body {
+                          background-image: url('medical.jpg');
+                          background-repeat: no-repeat;
+                          background-attachment: fixed;
+                          background-size: 100% 100%;
+                        }
+                        </style>
+                        Check the conditions that apply to you?
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="RadioApply" value="Asthma" id="Asthma">
+                            <label class="form-check-label" for="cancer">
+                                Asthma
+                            
+                            <input class="form-check-input"style="margin-left:25px;"  type="checkbox" name="RadioApply" value="Cancer" id="cancer">
+                            <label class="form-check-label" for="Cardiac Disease">
+                                Cancer  
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="RadioApply" value="Cancer" id="Cancer">
+                            <label class="form-check-label" for="Diabetic">
+                                Cardiac Disease
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="RadioApply" value="Cardiac Disease" id="Cardiac Disease">
+                            <label class="form-check-label" for="Blood Pressure">
+                                Diabetic
+                            
+                            <input class="form-check-input" style="margin-left:25px;" type="checkbox"name="RadioApply"  value="Diabetic" id="Diabetic">
+                            <label class="form-check-label" for="Blood pressure">
+                                Blood Pressure
+                            </label>
+                        </div>
+                        Check the Symptoms that your currently experiencing?
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"name="RadioExp"  value="Cardivascular" id="Cardivascular">
+                            <label class="form-check-label" for="Cardivascular">
+                                Cardivascular
+                            
+                            <input class="form-check-input"style="margin-left:25px;"  type="checkbox"name="RadioExp"  value="Hematological" id="Hematological">
+                            <label class="form-check-label" for="Hematological">
+                                Hematological
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"name="RadioExp"  value="Lymphatic" id="Lymphatic">
+                            <label class="form-check-label" for="Lymphatic">
+                                Lymphatic
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"name="RadioExp"  value="Neurological" id="Neurological">
+                            <label class="form-check-label" for="Neurological">
+                                Neurological
+                            
+                            <input class="form-check-input" style="margin-left:25px;" type="checkbox"name="RadioExp"  value="Pshychiatiric" id="Pshychiatiric">
+                            <label class="form-check-label" for="Pshychiatiric">
+                                Pshychiatiric
+                            </label>
+                        </div>                        
+                        <button type="submit" formaction="/Home.html"class="btn btn-primary p-3 display-4">Submit</button>
+                        </div>
+                    </div>  
+                </div>
+            </form>
+      </div>
+      </body>
+  </html>
+  
